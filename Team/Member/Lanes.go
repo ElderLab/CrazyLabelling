@@ -8,7 +8,7 @@ var lanes = []string{
 	"Support",
 }
 
-// Lanes returns the list of lanes in League of Legends.
-func Lanes() []string {
+// GetLanes returns the list of lanes in League of Legends.
+func GetLanes() []string {
 	return lanes
 }
