@@ -32,7 +32,7 @@ func DefaultMiddleware(app *fiber.App) {
 
 	// Add request logging middleware with enhanced security information
 	app.Use(logger.New(logger.Config{
-		Format:     "[${time}] ${latency} - ${status} - ${method} - ${ip} - ${reqHeader:user-agent} - ReqID:${locals:requestid}\n",
+		Format:     "[${time}]${latency} - ${status} - ${method} - ${ip} - ${reqHeader:user-agent} - ReqID:${locals:requestid}\n",
 		TimeFormat: "2006-01-02 15:04:05",
 		TimeZone:   "Local",
 		Output:     Output,
